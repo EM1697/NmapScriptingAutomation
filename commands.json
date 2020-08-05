@@ -1,10 +1,14 @@
 [
     {
         "name": "No_Ping", 
-        "command": "Pn"
+        "command": "-Pn"
     },
     {   
         "name": "OS", 
-        "command": "O"
+        "command": "-O"
+    },
+    {
+	    "name":"Version-servicios",
+	    "command":"-sV"
     }
 ]

@@ -1,0 +1,10 @@
+[
+    {
+        "name": "No_Ping", 
+        "command": "Pn"
+    },
+    {   
+        "name": "OS", 
+        "command": "O"
+    }
+]
