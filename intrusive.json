@@ -1,373 +1,126 @@
-
 [
-        
-]        
-        {
-        "name": "afp-brute",
-        "command": "-p 548 --script afp-brute <host>"
-        },
 	{
-        "name": "afp-path-vuln"
-        "command": "-sV --script=afp-path-vuln"
+        "name": "ajp-brute",
+        "command": "-p 8009  --script ajp-brute"
 	},
 	{
-        "name": "ajp-brute"
-        "command": "-p 8009 <ip> --script ajp-brute"
+        "name": "cvs-brute",
+        "command": "-p 2401 --script cvs-brute"
 	},
 	{
-        "name": "backorifice-brute"
-        "command": "-sU --script backorifice-brute <host> --script-args backorifice-brute.ports=<ports>"
+        "name": "cvs-brute-repository",
+        "command": "-p 2401 --script cvs-brute-repository"
 	},
 	{
-        "name": "broadcast-avahi-dos"
-        "command": "--script=broadcast-avahi-dos"
+        "name": "firewall-bypass",
+        "command": "--script firewall-bypass"
 	},
 	{
-        "name": "cassandra-brute"
-        "command": "-p 9160 <ip> --script=cassandra-brute"
+        "name": "ftp-brute",
+        "command": "--script ftp-brute -p 21"
 	},
 	{
-        "name": "cics-enum"
-        "command": "--script=cics-enum -p 23 <targets>"
+        "name": "ftp-proftpd-backdoor",
+        "command": "--script ftp-proftpd-backdoor -p 21"
 	},
 	{
-        "name": "cics-user-brute"
-        "command": "--script=cics-user-brute -p 23 <targets>"
+        "name": "ftp-vsftpd-backdoor",
+        "command": "--script ftp-vsftpd-backdoor -p 21"
 	},
 	{
-        "name": "cics-user-enum"
-        "command": "--script=cics-user-enum -p 23 <targets>"
+        "name": "ftp-vuln-cve2010-4221",
+        "command": "--script ftp-vuln-cve2010-4221 -p 21"
 	},
 	{
-        "name": "citrix-brute-xml"
-        "command": "--script=citrix-brute-xml --script-args=userdb=<userdb>,passdb=<passdb>,ntdomain=<domain> -p 80,443,8080 <host>"
+        "name": "http-awstatstotals-exec",
+        "command": "-sV --script http-awstatstotals-exec.nse"
 	},
 	{
-        "name": "cvs-brute"
-        "command": "-p 2401 --script cvs-brute <host>"
+        "name": "http-axis2-dir-traversal",
+        "command": "-p80 --script http-axis2-dir-traversal"
 	},
 	{
-        "name": "cvs-brute-repository"
-        "command": "-p 2401 --script cvs-brute-repository <host>"
+        "name": "http-brute",
+        "command": "--script http-brute -p 80"
 	},
 	{
-        "name": "deluge-rpc-brute"
-        "command": "--script deluge-rpc-brute -p 58846 <host>"
+        "name": "http-config-backup",
+        "command": "--script=http-config-backup"
 	},
 	{
-        "name": "distcc-cve2004-2687"
-        "command": "-p 3632 <ip> --script distcc-exec --script-args=distcc-exec.cmd='id'"
+        "name": "http-dombased-xss",
+        "command": "-p80 --script http-dombased-xss.nse"
 	},
 	{
-        "name": "dns-brute"
-        "command": "--script dns-brute --script-args dns-brute.domain=foo.com,dns-brute.threads=6,dns-brute.hostlist=./hostfile.txt,newtargets -sS -p 80"
+        "name": "http-csrf",
+        "command": "-p80 --script http-csrf.nse"
 	},
 	{
-        "name": "dns-fuzz"
-        "command": "-sU --script dns-fuzz --script-args timelimit=2h <target>"
+        "name": "http-enum",
+        "command": "-sV --script=http-enum"
 	},
 	{
-        "name": "dns-ip6-arpa-scan"
-        "command": "--script dns-ip6-arpa-scan --script-args='prefix=2001:0DB8::/48'"
+        "name": "http-errors",
+        "command": "-p80 --script http-errors.nse"
 	},
 	{
-        "name": "dns-nsec-enum"
-        "command": "-sSU -p 53 --script dns-nsec-enum --script-args dns-nsec-enum.domains=example.com <target>"
+        "name": "http-exif-spider",
+        "command": "--script http-exif-spider -p80,443"
 	},
 	{
-        "name": "dns-random-srcport"
-        "command": "-sU -p 53 --script=dns-random-srcport <target>"
+        "name": "http-fileupload-exploiter",
+        "command": "-p80 --script http-fileupload-exploiter.nse"
 	},
 	{
-        "name": "dns-random-txid"
-        "command": "-sU -p 53 --script=dns-random-txid <target>"
+        "name": "http-form-brute",
+        "command": "--script http-form-brute -p 80"
 	},
 	{
-        "name": "dns-update"
-        "command": "-sU -p 53 --script=dns-update --script-args=dns-update.hostname=foo.example.com,dns-update.ip=192.0.2.1 <target>"
+        "name": "http-iis-short-name-brute",
+        "command": "-p80 --script http-iis-short-name-brute"
 	},
 	{
-        "name": "dns-zone-transfer"
-        "command": "--script dns-zone-transfer.nse \
-     --script-args dns-zone-transfer.domain=<domain>"
+        "name": "http-joomla-brute",
+        "command": "-sV --script http-joomla-brute"
 	},
 	{
-        "name": "domcon-brute"
-        "command": "--script domcon-brute -p 2050 <host>"
+        "name": "http-open-redirect",
+        "command": "--script=http-open-redirect"
 	},
 	{
-        "name": " domino-enum-users"
-        "command": "--script domino-enum-users -p 1352 <host>"
+        "name": "http-phpself-xss",
+        "command": "-sV --script http-self-xss"
 	},
 	{
-        "name": "dpap-brute"
-        "command": "--script dpap-brute -p 8770 <host>"
+        "name": "http-proxy-brute",
+        "command": "--script http-proxy-brute -p 8080"
 	},
 	{
-        "name": "drda-brute"
-        "command": "-p 50000 --script drda-brute <target>"
+        "name": "http-rfi-spider",
+        "command": "--script http-rfi-spider -p80"
 	},
 	{
-        "name": "firewall-bypass"
-        "command": "--script firewall-bypass <target>"
+        "name": "http-shellshock",
+        "command": "-sV -p- --script http-shellshock"
 	},
 	{
-        "name": "ftp-brute"
-        "command": "--script ftp-brute -p 21 <host>"
+        "name": "http-slowloris",
+        "command": "--script http-slowloris --max-parallelism 400"
 	},
 	{
-        "name": "ftp-libopie"
-        "command": "sV --script=ftp-libopie <target>"
+        "name": "http-sql-injection",
+        "command": "-sV --script=http-sql-injection"
 	},
 	{
-        "name": "ftp-proftpd-backdoor"
-        "command": "--script ftp-proftpd-backdoor -p 21 <host>"
+        "name": "http-stored-xss",
+        "command": "-p80 --script http-stored-xss.nse"
 	},
 	{
-        "name": "ftp-vsftpd-backdoor"
-        "command": "--script ftp-vsftpd-backdoor -p 21 <host>"
+        "name": "http-userdir-enum",
+        "command": "-sV --script=http-userdir-enum"
 	},
 	{
-        "name": "ftp-vuln-cve2010-4221"
-        "command": "--script ftp-vuln-cve2010-4221 -p 21 <host>"
-	},
-	{
-        "name": "http-awstatstotals-exec"
-        "command": "-sV --script http-awstatstotals-exec.nse <target>"
-	},
-	{
-        "name": "http-axis2-dir-traversal"
-        "command": "-p80 --script http-axis2-dir-traversal <host/ip>"
-	},
-	{
-        "name": "http-barracuda-dir-traversal"
-        "command": "--script http-barracuda-dir-traversal --script-args http-max-cache-size=5000000 -p <port> <host>"
-	},
-	{
-        "name": "http-brute"
-        "command": "--script http-brute -p 80 <host>"
-	},
-	{
-        "name": "http-config-backup"
-        "command": "--script=http-config-backup <target>"
-	},
-	{
-        "name": "http-dombased-xss"
-        "command": "-p80 --script http-dombased-xss.nse <target>"
-	},
-	{
-        "name": "http-domino-enum-passwords"
-        "command": "--script http-domino-enum-passwords -p 80 <host> --script-args http-domino-enum-passwords.username='patrik karlsson',http-domino-enum-passwords.password=secret"
-	},
-	{
-        "name": "http-drupal-enum"
-        "command": "-p 80 --script http-drupal-enum <target>"
-	},
-	{
-        "name": "http-csrf"
-        "command": "-p80 --script http-csrf.nse <target>"
-	},
-	{
-        "name": "http-drupal-enum-users"
-        "command": "--script=http-drupal-enum-users --script-args http-drupal-enum-users.root=/path/ <targets>"
-	},
-	{
-        "name": "http-enum"
-        "command": "-sV --script=http-enum <target>"
-	},
-	{
-        "name": "http-errors"
-        "command": "-p80 --script http-errors.nse <target>"
-	},
-	{
-        "name": "http-exif-spider"
-        "command": "--script http-exif-spider -p80,443 <host>"
-	},
-	{
-        "name": "http-fileupload-exploiter"
-        "command": "-p80 --script http-fileupload-exploiter.nse <target>"
-	},
-	{
-        "name": "http-form-brute"
-        "command": "--script http-form-brute -p 80 <host>"
-	},
-	{
-        "name": "http-form-fuzzer"
-        "command": "--script http-form-fuzzer --script-args 'http-form-fuzzer.targets={1={path=/},2={path=/register.html}}' -p 80 <host>"
-	},
-	{
-        "name": "http-iis-short-name-brute"
-        "command": "-p80 --script http-iis-short-name-brute <target>"
-	},
-	{
-        "name": "http-iis-webdav-vuln"
-        "command": "--script http-iis-webdav-vuln -p80,8080 <host>"
-	},
-	{
-        "name": "http-joomla-brute"
-        "command": "-sV --script http-joomla-brute <target>"
-	},
-	{
-        "name": "http-litespeed-sourcecode-download"
-        "command": "-p8088 --script http-litespeed-sourcecode-download <host>"
-	},
-	{
-        "name": "File http-majordomo2-dir-traversal"
-        "command": "-p80 --script http-majordomo2-dir-traversal <host/ip>"
-	},
-	{
-        "name": "http-open-redirect"
-        "command": "--script=http-open-redirect <target>"
-	},
-        "name": "http-passwd"
-        "command": "--script http-passwd --script-args http-passwd.root=/test/ <target>"
-	},
-	{
-        "name": "http-phpself-xss"
-        "command": "-sV --script http-self-xss <target>"
-	},
-	{
-        "name": "http-proxy-brute"
-        "command": "--script http-proxy-brute -p 8080 <host>"
-	},
-	{
-        "name": "http-put"
-        "command": "-p 80 <ip> --script http-put --script-args http-put.url='/uploads/rootme.php',http-put.file='/tmp/rootme.php'"
-	},
-	{
-        "name": "http-rfi-spider"
-        "command": "--script http-rfi-spider -p80 <host>"
-	},
-	{
-        "name": "http-shellshock"
-        "command": "-sV -p- --script http-shellshock <target>"
-	},
-	{
-        "name": "http-slowloris"
-        "command": "--script http-slowloris --max-parallelism 400  <target>"
-	},
-	{
-        "name": "http-sql-injection"
-        "command": "-sV --script=http-sql-injection <target>"
-	},
-	{
-        "name": "http-stored-xss"
-        "command": "-p80 --script http-stored-xss.nse <target>"
-	},
-	{
-        "name": "http-userdir-enum"
-        "command": "-sV --script=http-userdir-enum <target>"
-	},
-	{
-        "name": "ldap-brute"
-        "command": "-p 389 --script ldap-brute --script-args ldap.base='cn=users,dc=cqure,dc=net' <host>"
-	},
-	{
-        "name": "mysql-enum"
-        "command": "--script=mysql-enum <target>"
-	},
-	{
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	{
-        "name": ""
-        "command": ""
-	},
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+        "name": "mysql-enum",
+        "command": "--script=mysql-enum"
+	}
 ]

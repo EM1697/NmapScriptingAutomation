@@ -6,9 +6,5 @@
     {   
         "name": "http-slowloris", 
         "command": "--script http-slowloris --max-parallelism 400"
-    },
-    {
-        "name": "ipv6-ra-flood",
-        "command": "-6 --script ipv6-ra-flood.nse"
     }
 ]

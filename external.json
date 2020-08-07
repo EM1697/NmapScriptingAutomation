@@ -32,10 +32,6 @@
         "command": "--script http-proxy-brute -p 8080"
     },
     {
-        "name": "http-robtex-reverse-ip",
-        "command": "--script http-robtex-reverse-ip --script-args http-robtex-reverse-ip.host="
-    },
-	    {
         "name": "http-robtex-shared-ns",
         "command": "--script http-robtex-shared-ns"
     },
@@ -46,10 +42,6 @@
     {
         "name": "ip-geolocation-geoplugin",
         "command": "--script ip-geolocation-geoplugin"
-    },
-    {
-        "name": "smtp-enum-users",
-        "command": "--script smtp-enum-users.nse [--script-args smtp-enum-users.methods={EXPN,...},...] -p 25,465,587"
     },
     {
         "name": "whois-domain",

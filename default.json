@@ -1,7 +1,7 @@
 [
     {
-        "name": "address-info_afp-serverinfo_auth-owners_creds-summary_http-git_http-robots.txt_http-title_imap-capabilities_irc-info_iscsi-info_knx-gateway-info_mysql-info_ncp-serverinfo_pop3-capabilities_rpcinfo_snmp-info_sshv1_sslv2_sstp-discover_vnc-info_weblogic-t3-info", 
-        "command": "-sV -sC"
+        "name": "GENERAL", 
+        "command": "-sV -sC -O"
     },
     {
         "name": "ajp-auth",
@@ -20,96 +20,12 @@
         "command": "--script backorifice-info"
     },
     {
-        "name": "cassandra-info",
-        "command": "-p 9160 --script=cassandra-info"
-    },
-    {
         "name": "bitcoinrpc-info",
         "command": "-p 8332 --script bitcoinrpc-info"
     },
     {
-        "name": "dicom-ping",
-        "command": "-sV --script dicom-ping"
-    },
-    {
-        "name": "dicom-ping",
-        "command": "-p4242 --script dicom-ping"
-    },
-	    {
-        "name": "ajp-auth",
-        "command": "-sSU -p 53 --script dns-nsid"
-    },
-    {
-        "name": "ajp-methods",
-        "command": "-p 8009 <ip> --script ajp-methods"
-    },
-    {
-        "name": "amqp-info",
-        "command": "--script amqp-info -p5672"
-    },
-    {
-        "name": "auth-owners",
-        "command": "-sV -sC"
-    },
-    {
-        "name": "cassandra-info",
-        "command": "-p 9160 <ip> --script=cassandra-info"
-    },
-    {
-        "name": "clock-skew",
-        "command": "-sV -sC"
-    },
-    {
-        "name": "creds-summary",
-        "command": "-sV -sC"
-    },
-    {
-        "name": "dicom-ping",
-        "command": "-p4242 --script dicom-ping"
-    },
-	    {
         "name": "http-auth",
         "command": "--script http-auth [--script-args http-auth.path=/login] -p80"
-    },
-    {
-        "name": "ganglia-info",
-        "command": "--script ganglia-info --script-args ganglia-info.timeout=60,ganglia-info.bytes=1000000 -p 80,443"
-    },
-    {
-        "name": "hadoop-datanode-info",
-        "command": "--script hadoop-datanode-info.nse -p 50075"
-    },
-    {
-        "name": "hadoop-jobtracker-info",
-        "command": "--script hadoop-jobtracker-info [--script-args=hadoop-jobtracker-info.userinfo] -p 50030"
-    },
-    {
-        "name": "hadoop-namenode-info",
-        "command": "--script hadoop-namenode-info -p 50070"
-    },
-    {
-        "name": "hadoop-secondary-namenode-info",
-        "command": "--script  hadoop-secondary-namenode-info -p 50090"
-    },
-    {
-        "name": "hadoop-tasktracker-info",
-        "command": "--script hadoop-tasktracker-info -p 50060"
-    },
-    {
-        "name": "hbase-master-info",
-        "command": "--script hbase-master-info -p 60010"
-    },
-	  {   
-        "name": "hbase-region-info", 
-        "command": "--script hbase-region-info -p 60030"
-    },
-    {
-        "name": "hddtemp-info",
-        "command": "-p 7634 -sV -sC"
-    },
-    {
-        "name": "hnap-info",
-        "command": "--script hnap-info -p80,8080"
     },
     {
         "name": "http-auth",
@@ -124,10 +40,6 @@
         "command": "-p 80 --script http-cors"
     },
     {
-        "name": "http-generator",
-        "command": "--script http-generator [--script-args http-generator.path=/,http-generator.redirects=3]"
-    },
-    {
         "name": "http-ls",
         "command": "nmap -n -p 80 --script http-ls"
     },
@@ -135,45 +47,9 @@
         "name": "http-methods",
         "command": "--script http-methods"
     },
-	    {
-        "name": "http-svn-enum",
-        "command": "--script http-svn-enum"
-    },
-    {
-        "name": "http-svn-info",
-        "command": "--script http-svn-info"
-    },
-    {
-        "name": "http-webdav-scan",
-        "command": "--script http-webdav-scan -p80,8080"
-    },
-    {
-        "name": "ike-version",
-        "command": "-sU -sV -p 500"
-    },
-    {
-        "name": "imap-ntlm-info",
-        "command": "-p 143,993 --script imap-ntlm-info"
-    },
-    {
-        "name": "ip-https-discover",
-        "command": "--script ip-https-discover"
-    },
     {
         "name": "jdwp-info",
         "command": "-sT -p 80,443 --script=+jdwp-info"
-    },
-    {
-        "name": "maxdb-info",
-        "command": "-p 7210 --script maxdb-info"
-    },
-	    {
-        "name": "mongodb-databases",
-        "command": "-p 27017 --script mongodb-databases"
-    },
-    {
-        "name": "mongodb-info",
-        "command": "-p 27017 --script mongodb-info"
     },
     {
         "name": "ms-sql-info",
@@ -192,10 +68,6 @@
         "command": "-sU --script nbstat.nse -p137"
     },
     {
-        "name": "nntp-ntlm-info",
-        "command": "-p 119,433,563 --script nntp-ntlm-info"
-    },
-    {
         "name": "ntp-info",
         "command": "-sU -p 123 --script ntp-info"
     },
@@ -208,24 +80,8 @@
         "command": "-p139,445 -vv --script p2p-conficker,smb-os-discovery,smb-check-vulns --script-args=checkconficker=1,safe=1 -T4"
     },
     {
-        "name": "pop3-ntlm-info",
-        "command": "-p 110,995 --script pop3-ntlm-info"
-    },
-    {
         "name": "rdp-ntlm-info",
         "command": "-p 3389 --script rdp-ntlm-info"
-    },
-    {
-        "name": "rmi-dumpregistry",
-        "command": "--script rmi-dumpregistry -p 1098"
-    },
-    {
-        "name": "rtsp-methods",
-        "command": "-p 554 --script rtsp-methods"
-    },
-    {
-        "name": "servicetags",
-        "command": "-sU -p 6481 --script=servicetags"
     },
     {
         "name": "sip-methods",
@@ -308,27 +164,7 @@
         "command": "-sU -p 1900 --script=upnp-info"
     },
     {
-        "name": "uptime-agent-info",
-        "command": "--script uptime-agent-info -p 9998"
-    },
-    {
-        "name": "wdb-version",
-        "command": "-sU -p 17185 --script wdb-version"
-    },
-    {
         "name": "wsdd-discover",
         "command": "--script wsdd-discover"
-    },
-    {
-        "name": "x11-access",
-        "command": "-sV -sC"
-    },
-    {
-        "name": "xmlrpc-methods",
-        "command": "-sV -sC"
-    },
-    {
-        "name": "xmpp-info",
-        "command": "-sV"
     }
 ]

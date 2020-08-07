@@ -1,48 +1,16 @@
 [
-    {
+        {
         "name": "acarsd-info", 
         "command": "--script acarsd-info --script-args"
-   },
-    {   
-        "name": "afp-ls", 
-        "command": "-sS -sV -p 548 --script=afp-ls target"
-    },
-    {
-        "name": "afp-serverinfo",
-        "command": "-sV -sC"
-    },
-    {
-        "name": "afp-showmount",
-        "command": "-sV --script=afp-showmount"
-    },
-    {
+        },
+        {
         "name": "ajp-headers",
-        "command": "-p 8009 <ip> --script ajp-headers"
-    },
-    {
+        "command": "-p 8009  --script ajp-headers"
+        },
+        {
         "name": "ajp-request",
-        "command": "-p 8009 <ip> --script ajp-request"
-    },
-    {
-        "name": "allseeingeye-info",
-        "command": "-sV"
-    },
-    {
-        "name": "amqp-info",
-        "command": "--script amqp-info -p5672"
-    },
-    {
-        "name": "asn-query",
-        "command": "--script asn-query [--script-args dns=<DNS server>]"
-    },
-    {
-        "name": "backorifice-info",
-        "command": "--script backorifice-info <target> --script-args backorifice-info.password=<password>"
-    },
-    {
-        "name": "bacnet-info",
-        "command": "--script bacnet-info -sU -p 47808"
-    },
+        "command": "-p 8009  --script ajp-request"
+        },
 	{
         "name": "banner",
         "command": "-sV --script=banner"
@@ -52,929 +20,195 @@
         "command": "-sU -p 67 --script=dhcp-discover"
 	},
 	{
-        "name": "dicom-ping",
-        "command": "-p4242 --script dicom-ping"
-	},
-	{
-        "name": " dns-brute",
-        "command": "--script dns-brute"
-	},
-	{
-        "name": "dns-cache-snoop"
-        "command": "-sU -p 53 --script dns-cache-snoop.nse --script-args 'dns-cache-snoop.mode=timed,dns-cache-snoop.domains={host1,host2,host3}'"
-	},
-	{
-        "name": "dns-client-subnet-scan"
-        "command": "-sU -p 53 --script dns-client-subnet-scan  --script-args \
-    'dns-client-subnet-scan.domain=www.example.com, \
-    dns-client-subnet-scan.address=192.168.0.1 \
-    [,dns-client-subnet-scan.nameserver=8.8.8.8] \
-    [,dns-client-subnet-scan.mask=24]'"
-	},
-	{
-        "name": "dns-service-discovery",
-        "command": "--script=dns-service-discovery -p 5353"
-	},
-	{
-        "name": "dns-srv-enum"
-        "command": "--script dns-srv-enum --script-args"
-	},
-	{
-        "name": "dns-zeustracker"
-        "command": "-sn -PN --script=dns-zeustracker"
-	},
-	{
-        "name": "dns-zone-transfer"
-        "command": "--script dns-zone-transfer.nse \
-     --script-args dns-zone-transfer.domain=<domain>"
-	},
-	{
-        "name": "drda-info"
-        "command": "-sV"
-	},
-	{
-        "name": "enip-info"
-        "command": "--script enip-info -sU -p 44818"
-	},
-	{
-        "name": "epmd-info"
-        "command": "-p 4369 --script epmd-info"
-	},
-	{
-        "name": "eppc-enum-processes"
-        "command": "-p 3031 <ip> --script eppc-enum-processes"
-	},
-	{
-        "name": "fcrdns"
+        "name": "fcrdns",
         "command": "-sn -Pn --script fcrdns"
 	},
 	{
-        "name": "finger"
+        "name": "finger",
         "command": "-sV -sC"
 	},
 	{
-        "name": "firewalk"
+        "name": "firewalk",
         "command": "--script=firewalk --traceroute"
 	},
 	{
-        "name": "flume-master-info"
+        "name": "flume-master-info",
         "command": "--script flume-master-info -p 35871 host"
 	},
 	{
-        "name": "flume-master-info"
-        "command": "--script flume-master-info -p 35871 host"
-	},
-	{
-        "name": "fox-info"
-        "command": "--script fox-info.nse -p 1911"
-	},
-	{
-        "name": "freelancer-info"
-        "command": "-sU -sV -p 2302"
-		"command": "-sU -p 2302 --script=freelancer-info"
-	},
-	{
-        "name": "freelancer-info"
-        "command": "-sU -sV -p 2302"
-		"command": "-sU -p 2302 --script=freelancer-info"
-	},
-	{
-        "name": "ftp-syst"
+        "name": "ftp-syst",
         "command": "-sV -sC"
 	},
 	{
-        "name": "ganglia-info"
-        "command": "--script ganglia-info --script-args ganglia-info.timeout=60,ganglia-info.bytes=1000000 -p"
-	},
-	{
-        "name": "giop-info"
-        "command": "-sV -sC"
-	},
-	{
-        "name": "gkrellm-info"
-        "command": "-p 19150 <ip> --script gkrellm-info"
-	},
-	{
-        "name": "gopher-ls"
-        "command": "-p 70 --script gopher-ls --script-args gopher-ls.maxfiles=100"
-	},
-	{
-        "name": " gpsd-info"
-        "command": "-p 70 --script gopher-ls --script-args gopher-ls.maxfiles=100"
-	},
-	{
-        "name": "hadoop-datanode-info"
-        "command": "--script hadoop-datanode-info.nse -p 50075 host"
-	},
-	{
-        "name": "hadoop-jobtracker-info"
-        "command": "--script hadoop-jobtracker-info [--script-args=hadoop-jobtracker-info.userinfo] -p 50030 host"
-	},
-	{
-        "name": "hadoop-namenode-info"
-        "command": "--script hadoop-namenode-info -p 50070 host"
-	},
-	{
-        "name": "hadoop-secondary-namenode-info"
-        "command": "--script  hadoop-secondary-namenode-info -p 50090 host"
-	},
-	{
-        "name": "hadoop-tasktracker-info"
-        "command": "--script hadoop-tasktracker-info -p 50060 host"
-	},
-	{
-        "name": "hbase-master-info"
-        "command": "--script hbase-master-info -p 60010 host"
-	},
-	{
-        "name": "hbase-region-info"
-        "command": "--script hbase-region-info -p 60030 host"
-	},
-	{
-        "name": "hbase-region-info"
-        "command": "--script hbase-region-info -p 60030 host"
-	},
-	{
-        "name": "hddtemp-info"
-        "command": "-p 7634 -sV -sC"
-	},
-	{
-        "name": "hnap-info"
-        "command": "-p 7634 -sV -sC"
-	},
-	{
-        "name": "hostmap-bfk"
-        "command": "--script hostmap-bfk --script-args hostmap-bfk.prefix=hostmap-"
-	},
-	{
-        "name": " hostmap-crtsh"
-        "command": "--script hostmap-crtsh --script-args 'hostmap-crtsh.prefix=hostmap-'"
-	},
-	{
-        "name": " hostmap-crtsh"
-        "command": "--script hostmap-crtsh --script-args 'hostmap-crtsh.prefix=hostmap-'"
-	},
-	{
-        "name": "hostmap-robtex"
-        "command": "--script hostmap-robtex -sn -Pn scanme.nmap.org"
-	},
-	{
-        "name": "hostmap-robtex"
-        "command": "--script hostmap-robtex -sn -Pn scanme.nmap.org"
-	},
-	{
-        "name": " http-affiliate-id"
-        "command": "--script=http-affiliate-id.nse --script-args http-affiliate-id.url-path=/website"
-	},
-	{
-        "name": "http-apache-negotiation"
-        "command": "--script=http-apache-negotiation --script-args http-apache-negotiation.root=/root/"
-	},
-	{
-        "name": "http-apache-server-status"
+        "name": "http-apache-server-status",
         "command": "-p80 --script http-apache-server-status"
-		"command": "-sV --script http-apache-server-status"
 	},
 	{
-        "name": "http-apache-server-status"
-        "command": "-p80 --script http-apache-server-status"
-		"command": "-sV --script http-apache-server-status"
-	},
-	{
-        "name": "http-aspnet-debug"
-        "command": "--script http-aspnet-debug"
-		"command": "--script http-aspnet-debug --script-args http-aspnet-debug.path=/path"
-	},
-	{
-        "name": "http-auth-finder"
+        "name": "http-aspnet-debug",
         "command": "--script http-aspnet-debug"
 	},
 	{
-        "name": " http-backup-finder"
+        "name": "http-auth-finder",
+        "command": "--script http-aspnet-debug"
+	},
+	{
+        "name": " http-backup-finder",
         "command": "--script=http-backup-finder"
 	},
 	{
-        "name": " http-bigip-cookie"
+        "name": " http-bigip-cookie",
         "command": "-p --script http-bigip-cookie"
 	},
 	{
-        "name": "http-cakephp-version"
+        "name": "http-cakephp-version",
         "command": "-p80,443 --script http-cakephp-version"
 	},
 	{
-        "name": "http-chrono"
+        "name": "http-chrono",
         "command": "--script http-chrono"
 	},
 	{
-        "name": "http-cisco-anyconnect"
+        "name": "http-cisco-anyconnect",
         "command": "-p 443 --script http-cisco-anyconnect"
 	},
 	{
-        "name": "http-comments-displayer"
+        "name": "http-comments-displayer",
         "command": "-p80 --script http-comments-displayer.nse"
 	},
 	{
-        "name": "http-cors"
+        "name": "http-cors",
         "command": "-p 80 --script http-cors"
 	},
 	{
-        "name": "http-date"
-        "command": "-sV --script=http-date"
+        "name": "http-default-accounts",
+        "command": "-p80 --script http-default-accounts"
 	},
 	{
-        "name": "http-default-accounts"
-        "command": "-p80 --script http-default-accounts host/ip"
-	},
-	{
-        "name": "http-devframework"
-        "command": "-p80 --script http-devframework.nse"
-	},
-	{
-        "name": " http-drupal-enum"
-        "command": "-p 80 --script http-drupal-enum"
-	},
-	{
-        "name": " http-drupal-enum"
-        "command": "-p 80 --script http-drupal-enum"
-	},
-	{
-        "name": "http-drupal-enum-users"
-        "command": "--script=http-drupal-enum-users --script-args http-drupal-enum-users.root="
-	},
-	{
-        "name": "http-enum"
+        "name": "http-enum",
         "command": "-sV --script=http-enum"
 	},
 	{
-        "name": " http-errors"
+        "name": " http-errors",
         "command": "-p80 --script http-errors.nse"
 	},
-	
 	{
-        "name": "http-favicon"
-        "command": " --script=http-favicon.nse \--script-args favicon.root=<root>,favicon.uri=<uri>"
-	},
-	{
-        "name": " http-feed"
-        "command": "-p80 --script http-feed.nse"
-	},
-	{
-        "name": "http-generator"
-        "command": "--script http-generator [--script-args http-generator.path=<path>,http-generator.redirects=<number>,...]"
-	},
-	{
-        "name": "http-gitweb-projects-enum"
-        "command": "-p80 www.example.com --script http-gitweb-projects-enum"
-	},
-	{
-        "name": "http-google-malware"
+        "name": "http-google-malware",
         "command": "-p80 --script http-google-malware"
 	},
 	{
-        "name": "http-grep"
-        "command": "nmap -p 80 www.example.com --script http-grep --script-args='match=[A-Za-z0-9%.%%%+%-]+@[A-Za-z0-9%.%%%+%-]+%.%w%w%w?%w?,breakonmatch'"
-	},
-	{
-        "name": "http-headers"
-        "command": "-sV --script=http-headers"
-	},
-	{
-        "name": "http-hp-ilo-info"
-        "command": "--script hp-ilo-info -p 80"
-		"command": "--script hp-ilo-info -sV"
-	},
-	{
-        "name": "http-icloud-findmyiphone"
-        "command": "-sn -Pn --script http-icloud-findmyiphone --script-args='username=<user>,password=<pass>'"
-	},
-	{
-        "name": "http-icloud-sendmsg"
-        "command": "-sn -Pn --script http-icloud-sendmsg --script-args=username=<user>,password=<pass>,http-icloud-sendmsg.listdevices"
-	},
-	{
-        "name": "http-internal-ip-disclosure"
+        "name": "http-internal-ip-disclosure",
         "command": "--script http-internal-ip-disclosure"
-		"command": "--script http-internal-ip-disclosure --script-args http-internal-ip-disclosure.path=/path"
 	},
 	{
-        "name": "http-jsonp-detection"
-        "command": "-p 80 --script http-jsonp-detection"
-	},
-	{
-        "name": " http-ls"
-        "command": "-n -p 80 --script http-ls test-debit.free.fr"
-	},
-	{
-        "name": "http-mcmp"
-        "command": "-sV --script=http-mcmp"
-	},
-	{
-        "name": "http-mobileversion-checker"
-        "command": "-p80 --script http-mobileversion-checker.nse"
-	},
-	{
-        "name": "http-ntlm-info"
-        "command": "-p 80 --script http-ntlm-info --script-args http-ntlm-info.root=/root/"
-	},
-	{
-        "name": "http-php-version"
+        "name": "http-php-version",
         "command": "-sV --script=http-php-version"
 	},
 	{
-        "name": "http-put"
-        "command": " -p 80 <ip> --script http-put --script-args http-put.url='/uploads/rootme.php',http-put.file='/tmp/rootme.php'"
-	},
-	{
-        "name": "http-qnap-nas-info"
-        "command": "--script http-qnap-nas-info -p"
-	},
-	{
-        "name": "http-referer-checker"
+        "name": "http-referer-checker",
         "command": "-p80 --script http-referer-checker.nse"
 	},
 	{
-        "name": "http-robots.txt"
-        "command": "-sV -sC"
-	},
-	{
-        "name": "http-robtex-shared-ns"
-        "command": "--script http-robtex-shared-ns"
-	},
-	{
-        "name": "http-sap-netweaver-leak"
-        "command": "-p 80 --script http-sap-netweaver-leak"
-		"command": "-sV --script http-sap-netweaver-leak"
-	},
-	{
-        "name": "http-security-headers"
+        "name": "http-security-headers",
         "command": "-p --script http-security-headers"
 	},
 	{
-        "name": "http-sitemap-generator"
+        "name": "http-sitemap-generator",
         "command": "--script http-sitemap-generator -p 80"
 	},
 	{
-        "name": "http-svn-enum"
-        "command": "--script http-svn-enum "
-	},
-	{
-        "name": "http-svn-info"
-        "command": "--script http-svn-info"
-	},
-	{
-        "name": "http-title"
-        "command": "-sV -sC"
-	},
-	{
-        "name": "http-trane-info"
-        "command": "-p80 --script trane-info.nse"
-	},
-	{
-        "name": "http-trace"
-        "command": "--script http-trace -d"
-	},
-	{
-        "name": "http-unsafe-output-escaping"
-        "command": "--script=http-unsafe-output-escaping"
-	},
-	{
-        "name": "http-useragent-tester"
-        "command": "-p80 --script http-useragent-tester.nse"
-	},
-	{
-        "name": "http-vhosts"
+        "name": "http-vhosts",
         "command": "--script http-vhosts -p 80,8080,443"
 	},
 	{
-        "name": " http-vlcstreamer-ls"
-        "command": "-p 54340 --script http-vlcstreamer-ls"
-	},
-	{
-        "name": "http-waf-detect"
+        "name": "http-waf-detect",
         "command": "-p80 --script http-waf-detect"
 	},
 	{
-        "name": "http-waf-fingerprint"
+        "name": "http-waf-fingerprint",
         "command": "--script=http-waf-fingerprint"
 	},
 	{
-        "name": "http-webdav-scan"
-        "command": "--script http-webdav-scan -p80,8080"
-	},
-	{
-        "name": "http-wordpress-enum"
+        "name": "http-wordpress-enum",
         "command": "-sV --script http-wordpress-enum"
 	},
 	{
-        "name": "http-xssed"
+        "name": "http-xssed",
         "command": "-p80 --script http-xssed.nse"
 	},
 	{
-        "name": "icap-info"
-        "command": "-p 1344 <ip> --script icap-info"
+        "name": "icap-info",
+        "command": "-p 1344  --script icap-info"
 	},
 	{
-        "name": "iec-identify"
-        "command": "-sV --script=iec-identify"
+        "name": "ip-forwarding",
+        "command": "-sn  --script ip-forwarding --script-args='target=www.example.com'"
 	},
 	{
-        "name": "ike-version"
-        "command": "-sU -sV -p 500"
-		"command": "-sU -p 500 --script ike-version"
-	},
-	{
-        "name": "imap-ntlm-info"
-        "command": "-p 143,993 --script imap-ntlm-info"
-	},
-	{
-        "name": "ip-forwarding"
-        "command": "-sn <target> --script ip-forwarding --script-args='target=www.example.com'"
-	},
-	{
-        "name": "ip-geolocation-geoplugin"
+        "name": "ip-geolocation-geoplugin",
         "command": "--script ip-geolocation-geoplugin"
 	},
 	{
-        "name": "ip-geolocation-ipinfodb"
-        "command": "--script ip-geolocation-ipinfodb <target> --script-args ip-geolocation-ipinfodb.apikey=<API_key>"
+        "name": "jdwp-info",
+        "command": "-sT  -p  --script=+jdwp-info"
 	},
 	{
-        "name": "ip-geolocation-maxmind"
-        "command": "--script ip-geolocation-maxmind"
-	},
-	{
-        "name": "ip-geolocation-ipinfodb"
-        "command": "--script ip-geolocation-ipinfodb"
-	},
-	{
-        "name": "ip-geolocation-maxmind"
-        "command": "--script ip-geolocation-maxmind"
-	},
-	{
-        "name": "ip-https-discover"
-        "command": "--script ip-https-discover"
-	},
-	{
-        "name": "ipidseq"
-        "command": "--script ipidseq [--script-args probeport=port]"
-	},
-	{
-        "name": "ipmi-version"
-        "command": "-sU --script ipmi-version -p 623"
-	},
-	{
-        "name": "ipv6-multicast-mld-list"
-        "command": "--script=ipv6-multicast-mld-list"
-	},
-	{
-        "name": "ipv6-node-info"
-        "command": "-6"
-	},
-	{
-        "name": "irc-botnet-channels"
-        "command": "-p 6667 --script=irc-botnet-channels"
-	},
-	{
-        "name": "irc-info"
-        "command": "-sV -sC "
-	},
-	{
-        "name": "iscsi-info"
-        "command": "-sV -sC"
-	},
-	{
-        "name": "isns-info"
-        "command": "-p 3205 <ip> --script isns-info"
-	},
-	{
-        "name": "jdwp-info"
-        "command": "-sT <target> -p <port> --script=+jdwp-info"
-	},
-	{
-        "name": "knx-gateway-discover"
-        "command": "--script knx-gateway-discover -e eth0"
-	},
-	{
-        "name": "knx-gateway-info"
-        "command": "-sV -sC"
-	},
-	
-	{
-        "name": "ldap-rootdse"
-        "command": "-p 389 --script ldap-rootdse"
-	},
-	
-	{
-        "name": "lexmark-config"
-        "command": "-sU -p 9100 --script=lexmark-config"
-	},
-	{
-        "name": "lltd-discovery"
-        "command": "-e <interface> --script lltd-discovery"
-	},
-	{
-        "name": " membase-http-info"
-        "command": "-p 8091 <ip> --script membase-http-info"
-	},
-	{
-        "name": "memcached-info"
-        "command": "-p 11211 --script memcached-info"
-	},
-	{
-        "name": " modbus-discover"
-        "command": "--script modbus-discover.nse --script-args='modbus-discover.aggressive=true' -p 502"
-	},
-	{
-        "name": " mongodb-databases"
-        "command": "-p 27017 --script mongodb-databases"
-	},
-	{
-        "name": "mongodb-info"
-        "command": "-p 27017 --script mongodb-info"
-	},
-	{
-        "name": "mqtt-subscribe"
-        "command": "-p 1883 --script mqtt-subscribe"
-	},
-	{
-        "name": "mrinfo"
+        "name": "mrinfo",
         "command": "--script mrinfo"
 	},
 	{
-        "name": "ms-sql-config"
+        "name": "ms-sql-config",
         "command": "-p 1433 --script ms-sql-config --script-args mssql.username=sa,mssql.password=sa"
 	},
 	{
-        "name": "ms-sql-dump-hashes"
-        "command": "-p 1433 <ip> --script ms-sql-dump-hashes"
+        "name": "ms-sql-dump-hashes",
+        "command": "-p 1433  --script ms-sql-dump-hashes"
 	},
 	{
-        "name": "ms-sql-hasdbaccess"
+        "name": "ms-sql-hasdbaccess",
         "command": "-p 1433 --script ms-sql-hasdbaccess --script-args mssql.username=sa,mssql.password=sa"
 	},
 	{
-        "name": "ms-sql-info"
+        "name": "ms-sql-info",
         "command": "-p 445 --script ms-sql-info"
 	},
 	{
-        "name": "ms-sql-ntlm-info"
+        "name": "ms-sql-ntlm-info",
         "command": "-p 1433 --script ms-sql-ntlm-info"
 	},
 	{
-        "name": "ms-sql-query"
+        "name": "ms-sql-query",
         "command": "-p 1433 --script ms-sql-query --script-args mssql.username=sa,mssql.password=sa,ms-sql-query.query= SELECT * FROM master..syslogins"
 	},
 	{
-        "name": "ms-sql-tables"
+        "name": "ms-sql-tables",
         "command": "-p 1433 --script ms-sql-tables --script-args mssql.username=sa,mssql.password=sa"
 	},
 	{
-        "name": " msrpc-enum"
-        "command": "<target> --script=msrpc-enum"
+        "name": " msrpc-enum",
+        "command": " --script=msrpc-enum"
 	},
 	{
-        "name": " mtrace"
-        "command": "--script mtrace --script-args 'mtrace.fromip=172.16.45.4'"
-	},
-	{
-        "name": "mysql-audit"
-        "command": "-p 3306 --script mysql-audit --script-args mysql-audit.username='root', \
-  mysql-audit.password='foobar',mysql-audit.filename='nselib/data/mysql-cis.audit'"
-	},
-	{
-        "name": "mysql-databases"
+        "name": "mysql-databases",
         "command": "-sV --script=mysql-databases"
 	},
 	{
-        "name": "mysql-dump-hashes"
-        "command": "-p 3306 <ip> --script mysql-dump-hashes --script-args='username=root,password=secret'"
+        "name": "mysql-dump-hashes",
+        "command": "-p 3306  --script mysql-dump-hashes --script-args='username=root,password=secret'"
 	},
 	{
-        "name": "mysql-info"
-        "command": "-sV -sC"
-	},
-	{
-        "name": "mysql-query"
-        "command": "-p 3306 <ip> --script mysql-query --script-args='query=<query>[,username=<username>,password=<password>]'"
-	},
-	{
-        "name": "mysql-variables"
+        "name": "mysql-variables",
         "command": "-sV --script=mysql-variables"
 	},
 	{
-        "name": "mysql-vuln-cve2012-2122"
+        "name": "mysql-vuln-cve2012-2122",
         "command": "-p3306 --script mysql-vuln-cve2012-2122"
 	},
 	{
-        "name": "nat-pmp-info"
-        "command": "-sU -p 5351 --script=nat-pmp-info"
-	},
-	{
-        "name": "nat-pmp-mapport"
-        "command": "sU -p 5351 <ip> --script nat-pmp-mapport --script-args='op=map,pubport=8080,privport=8080,protocol=tcp'"
-	},
-	{
-        "name": "nbd-info"
-        "command": "-p 10809 --script nbd-info"
-	},
-	{
-        "name": "nbstat"
+        "name": "nbstat",
         "command": "-sU --script nbstat.nse -p137"
 	},
 	{
-        "name": "ncp-serverinfo"
-        "command": "-sV -sC"
-	},
-	{
-        "name": "ndmp-fs-info"
-        "command": "-p 10000 --script ndmp-fs-info"
-	},
-	{
-        "name": "netbus-info"
-        "command": "-p 12345 --script netbus-info <target> --script-args netbus-info.password=<password>"
-	},
-	{
-        "name": "nfs-ls"
-        "command": "-p 111 --script=nfs-ls"
-	},
-	{
-        "name": "nfs-showmount"
-        "command": "-sV --script=nfs-showmount"
-	},
-	{
-        "name": "nfs-statfs"
-        "command": "-p 111 --script=nfs-statfs"
-	},
-	{
-        "name": "nntp-ntlm-info"
-        "command": "-p 119,433,563 --script nntp-ntlm-info"
-	},
-	{
-        "name": "nrpe-enum"
-        "command": "--script nrpe-enum -p 5666"
-	},
-	{
-        "name": "ntp-info"
-        "command": "-sU -p 123 --script ntp-info"
-	},
-	{
-        "name": "ntp-monlist"
-        "command": "-sU -pU:123 -Pn -n --script=ntp-monlist"
-	},
-	{
-        "name": "omp2-enum-targets"
-        "command": "nmap -p 9390 --script omp2-brute,omp2-enum-targets"
-	},
-	{
-        "name": "omron-info"
-        "command": "--script omron-info -sU -p 9600"
-	},
-	{
-        "name": "openlookup-info"
-        "command": "-p 5850 --script openlookup-info"
-	},
-	{
-        "name": "openwebnet-discovery"
-        "command": "--script openwebnet-discovery"
-	},
-	{
-        "name": "path-mtu"
-        "command": "--script path-mtu target"
-	},
-	{
-        "name": "pcworx-info"
-        "command": "--script pcworx-info -p 1962"
-	},
-	{
-        "name": "pop3-capabilities"
-        "command": "-sV -sC"
-	},
-	{
-        "name": "pop3-ntlm-info"
-        "command": "-p 110,995 --script pop3-ntlm-info"
-	},
-	{
-        "name": " qscan"
-        "command": "--script qscan --script-args qscan.confidence=0.95,qscan.delay=200ms,qscan.numtrips=10 target"
-	},
-	{
-        "name": "quake1-info"
-        "command": "-n -sU -Pn --script quake1-info -pU:26000-26004 --"
-	},
-	{
-        "name": "quake3-info"
-        "command": "-sU -sV -Pn --script quake3-info.nse -p <port> <target>"
-	},
-	{
-        "name": "quake3-master-getservers"
-        "command": "-sU -p 27950 --script=quake3-master-getservers"
-	},
-	{
-        "name": "rdp-enum-encryption"
-        "command": "-p 3389 --script rdp-enum-encryption <ip>"
-	},
-	{
-        "name": "rdp-ntlm-info"
-        "command": "-p 3389 --script rdp-ntlm-info"
-	},
-	{
-        "name": "redis-info"
-        "command": "-p 6379 <ip> --script redis-info"
-	},
-	{
-        "name": "resolveall"
-        "command": "--script=resolveall --script-args=newtargets,resolveall.hosts={<host1>, ...} ..."
-	},
-	{
-        "name": "rfc868-time"
-        "command": "-sV"
-	},
-	{
-        "name": "riak-http-info"
-        "command": "-p 8098 <ip> --script riak-http-info"
-	},
-	{
-        "name": "rmi-dumpregistry"
-        "command": "--script rmi-dumpregistry -p 1098"
-	},
-	{
-        "name": "rpcap-info"
-        "command": "-p 2002 <ip> --script rpcap-info"
-	},
-	{
-        "name": "rpcinfo"
-        "command": "-sV"
-	},
-	{
-        "name": "rsync-list-modules"
-        "command": "-p 873 --script rsync-list-modules"
-	},
-	{
-        "name": "rusers"
-        "command": "-sV --script=rusers"
-	},
-	{
-        "name": "s7-info"
-        "command": "--script s7-info.nse -p 102 "
-	},
-	{
-        "name": "servicetags"
-        "command": "-sU -p 6481 --script=servicetags"
-	},{
-        "name": "shodan-api"
-        "command": "--script shodan-api --script-args 'shodan-api.target=x.y.z.a,shodan-api.apikey=SHODANAPIKEY'"
-	},
-	{
-        "name": "smtp-commands"
-        "command": "--script smtp-commands.nse [--script-args smtp-commands.domain=<domain>] -pT:25,465,587"
-	},
-	{
-        "name": "smtp-ntlm-info"
-        "command": "-p 25,465,587 --script smtp-ntlm-info --script-args smtp-ntlm-info.domain=domain.com"
-	},
-	{
-        "name": "smtp-open-relay"
-        "command": "--script smtp-open-relay.nse [--script-args smtp-open-relay.domain=<domain>,smtp-open-relay.ip=<address>,...] -p 25,465,587"
-	},
-	{
-        "name": "snmp-hh3c-logins"
-        "command": "-sU -p 161 --script snmp-hh3c-logins --script-args creds.snmp=:<community>"
-	},
-	{
-        "name": "snmp-interfaces"
-        "command": "-sU -p 161 --script=snmp-interfaces"
-	},
-	{
-        "name": "snmp-netstat"
-        "command": "-sU -p 161 --script=snmp-netstat"
-	},
-	{
-        "name": "snmp-processes"
-        "command": "-sU -p 161 --script=snmp-processes"
-	},
-	{
-        "name": "snmp-sysdescr"
-        "command": "-sU -p 161 --script snmp-sysdescr"
-	},
-	{
-        "name": "snmp-win32-services"
-        "command": "-sU -p 161 --script=snmp-win32-services"
-	},
-	{
-        "name": "snmp-win32-shares"
-        "command": "-sU -p 161 --script=snmp-win32-shares"
-	},
-	{
-        "name": "snmp-win32-software"
-        "command": "-sU -p 161 --script=snmp-win32-software"
-	},
-	{
-        "name": "socks-auth-info"
-        "command": "-p 1080 <ip> --script socks-auth-info"
-	},
-	{
-        "name": "socks-open-proxy"
-        "command": " --script=socks-open-proxy \
-   --script-args proxy.url=<host>,proxy.pattern=<pattern>"
-	{
-        "name": "ssh-hostkey"
-        "command": "host --script ssh-hostkey --script-args ssh_hostkey=full"
-	},
-	{
-        "name": "ssh2-enum-algos"
-        "command": "--script ssh2-enum-algos target"
-	},
-	{
-        "name": "ssl-cert"
-        "command": "-sV -sC"
-	},
-	{
-        "name": "ssl-cert-intaddr"
-        "command": "-p 443 --script ssl-cert-intaddr"
-	},
-	{
-        "name": "ssl-date"
-        "command": "--script=ssl-date"
-	},
-	{
-        "name": "ssl-enum-ciphers"
-        "command": "-sV --script ssl-enum-ciphers -p 443"
-	},
-	{
-        "name": "ssl-known-key"
-        "command": "--script ssl-known-key -p 443"
-	},
-	{
-        "name": "sstp-discover"
-        "command": "-sV -sC"
-	},
-	{
-        "name": "stun-info"
-        "command": "-sV -PN -sU -p 3478 --script stun-info"
-	},
-	{
-        "name": "stuxnet-detect"
-        "command": "--script stuxnet-detect -p 445 "
-	},
-	{
-        "name": "targets-ipv6-map4to6"
-        "command": "-6 --script targets-ipv6-map4to6 --script-args newtargets,targets-ipv6-map4to6.IPv4Hosts={192.168.1.0/24},targets-ipv6-subnet={2001:db8:c0ca::/64}"
-	},
-	{
-        "name": "targets-sniffer"
-        "command": "-sL --script=targets-sniffer --script-args=newtargets,targets-sniffer.timeout=5s,targets-sniffer.iface=eth0"
-	},
-	{
-        "name": "targets-traceroute"
-        "command": "--script targets-traceroute --script-args newtargets --traceroute target"
-	},
-	{
-        "name": "telnet-encryption"
-        "command": "-p 23 <ip> --script telnet-encryption"
-	},
-	{
-        "name": "telnet-ntlm-info"
-        "command": "-p 23 --script telnet-ntlm-info"
-	},
-	{
-        "name": "vmware-version"
-        "command": "--script vmware-version -p443 "
-	},
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+        "name": "rdp-enum-encryption",
+        "command": "-p 3389 --script rdp-enum-encryption"
+	}
 ]
