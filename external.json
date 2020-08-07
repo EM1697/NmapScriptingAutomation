@@ -1,0 +1,70 @@
+[
+    {
+        "name": "hostmap-bfk", 
+        "command": "--script hostmap-bfk --script-args hostmap-bfk.prefix=hostmap-"
+    },
+    {
+        "name": "hostmap-crtsh",
+        "command": "--script hostmap-crtsh --script-args 'hostmap-crtsh.prefix=hostmap-'"
+    },
+    {
+        "name": "hostmap-robtex",
+        "command": "--script hostmap-robtex -sn -Pn"
+    },
+    {
+        "name": "http-cross-domain-policy",
+        "command": "--script http-cross-domain-policy"
+    },
+    {
+        "name": "http-cross-domain-policy2",
+        "command": "-p 80 --script http-cross-domain-policy --script-args http-cross-domain-policy.domain-lookup=true"
+    },
+    {
+        "name": "http-google-malware",
+        "command": "-p80 --script http-google-malware"
+    },
+    {
+        "name": "http-open-proxy",
+        "command": "--script http-open-proxy.nse"
+    },
+    {
+        "name": "http-proxy-brute",
+        "command": "--script http-proxy-brute -p 8080"
+    },
+    {
+        "name": "http-robtex-reverse-ip",
+        "command": "--script http-robtex-reverse-ip --script-args http-robtex-reverse-ip.host="
+    },
+	    {
+        "name": "http-robtex-shared-ns",
+        "command": "--script http-robtex-shared-ns"
+    },
+    {
+        "name": "http-xssed",
+        "command": "-p80 --script http-xssed.nse"
+    },
+    {
+        "name": "ip-geolocation-geoplugin",
+        "command": "--script ip-geolocation-geoplugin"
+    },
+    {
+        "name": "smtp-enum-users",
+        "command": "--script smtp-enum-users.nse [--script-args smtp-enum-users.methods={EXPN,...},...] -p 25,465,587"
+    },
+    {
+        "name": "whois-domain",
+        "command": "--script whois-domain.nse"
+    },
+    {
+        "name": "traceroute-geolocation",
+        "command": "--traceroute --script traceroute-geolocation"
+    },
+    {
+        "name": "dns-random-txid",
+        "command": "-sU -p 53 --script=dns-random-txid"
+    },
+    {
+        "name": "dns-zeustracker",
+        "command": "-sn -PN --script=dns-zeustracker"
+    }
+]

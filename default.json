@@ -1,0 +1,334 @@
+[
+    {
+        "name": "address-info_afp-serverinfo_auth-owners_creds-summary_http-git_http-robots.txt_http-title_imap-capabilities_irc-info_iscsi-info_knx-gateway-info_mysql-info_ncp-serverinfo_pop3-capabilities_rpcinfo_snmp-info_sshv1_sslv2_sstp-discover_vnc-info_weblogic-t3-info", 
+        "command": "-sV -sC"
+    },
+    {
+        "name": "ajp-auth",
+        "command": "-p 8009 --script ajp-auth [--script-args ajp-auth.path=/login]"
+    },
+    {
+        "name": "ajp-methods",
+        "command": "-p 8009 --script ajp-methods"
+    },
+    {
+        "name": "amqp-info",
+        "command": "--script amqp-info -p5672"
+    },
+    {
+        "name": "backorifice-info",
+        "command": "--script backorifice-info"
+    },
+    {
+        "name": "cassandra-info",
+        "command": "-p 9160 --script=cassandra-info"
+    },
+    {
+        "name": "bitcoinrpc-info",
+        "command": "-p 8332 --script bitcoinrpc-info"
+    },
+    {
+        "name": "dicom-ping",
+        "command": "-sV --script dicom-ping"
+    },
+    {
+        "name": "dicom-ping",
+        "command": "-p4242 --script dicom-ping"
+    },
+	    {
+        "name": "ajp-auth",
+        "command": "-sSU -p 53 --script dns-nsid"
+    },
+    {
+        "name": "ajp-methods",
+        "command": "-p 8009 <ip> --script ajp-methods"
+    },
+    {
+        "name": "amqp-info",
+        "command": "--script amqp-info -p5672"
+    },
+    {
+        "name": "auth-owners",
+        "command": "-sV -sC"
+    },
+    {
+        "name": "cassandra-info",
+        "command": "-p 9160 <ip> --script=cassandra-info"
+    },
+    {
+        "name": "clock-skew",
+        "command": "-sV -sC"
+    },
+    {
+        "name": "creds-summary",
+        "command": "-sV -sC"
+    },
+    {
+        "name": "dicom-ping",
+        "command": "-p4242 --script dicom-ping"
+    },
+	    {
+        "name": "http-auth",
+        "command": "--script http-auth [--script-args http-auth.path=/login] -p80"
+    },
+    {
+        "name": "ganglia-info",
+        "command": "--script ganglia-info --script-args ganglia-info.timeout=60,ganglia-info.bytes=1000000 -p 80,443"
+    },
+    {
+        "name": "hadoop-datanode-info",
+        "command": "--script hadoop-datanode-info.nse -p 50075"
+    },
+    {
+        "name": "hadoop-jobtracker-info",
+        "command": "--script hadoop-jobtracker-info [--script-args=hadoop-jobtracker-info.userinfo] -p 50030"
+    },
+    {
+        "name": "hadoop-namenode-info",
+        "command": "--script hadoop-namenode-info -p 50070"
+    },
+    {
+        "name": "hadoop-secondary-namenode-info",
+        "command": "--script  hadoop-secondary-namenode-info -p 50090"
+    },
+    {
+        "name": "hadoop-tasktracker-info",
+        "command": "--script hadoop-tasktracker-info -p 50060"
+    },
+    {
+        "name": "hbase-master-info",
+        "command": "--script hbase-master-info -p 60010"
+    },
+	  {   
+        "name": "hbase-region-info", 
+        "command": "--script hbase-region-info -p 60030"
+    },
+    {
+        "name": "hddtemp-info",
+        "command": "-p 7634 -sV -sC"
+    },
+    {
+        "name": "hnap-info",
+        "command": "--script hnap-info -p80,8080"
+    },
+    {
+        "name": "http-auth",
+        "command": "--script http-auth [--script-args http-auth.path=/login] -p80"
+    },
+    {
+        "name": "http-cookie-flags",
+        "command": "-p 443 --script http-cookie-flags"
+    },
+    {
+        "name": "http-cors",
+        "command": "-p 80 --script http-cors"
+    },
+    {
+        "name": "http-generator",
+        "command": "--script http-generator [--script-args http-generator.path=/,http-generator.redirects=3]"
+    },
+    {
+        "name": "http-ls",
+        "command": "nmap -n -p 80 --script http-ls"
+    },
+    {
+        "name": "http-methods",
+        "command": "--script http-methods"
+    },
+	    {
+        "name": "http-svn-enum",
+        "command": "--script http-svn-enum"
+    },
+    {
+        "name": "http-svn-info",
+        "command": "--script http-svn-info"
+    },
+    {
+        "name": "http-webdav-scan",
+        "command": "--script http-webdav-scan -p80,8080"
+    },
+    {
+        "name": "ike-version",
+        "command": "-sU -sV -p 500"
+    },
+    {
+        "name": "imap-ntlm-info",
+        "command": "-p 143,993 --script imap-ntlm-info"
+    },
+    {
+        "name": "ip-https-discover",
+        "command": "--script ip-https-discover"
+    },
+    {
+        "name": "jdwp-info",
+        "command": "-sT -p 80,443 --script=+jdwp-info"
+    },
+    {
+        "name": "maxdb-info",
+        "command": "-p 7210 --script maxdb-info"
+    },
+	    {
+        "name": "mongodb-databases",
+        "command": "-p 27017 --script mongodb-databases"
+    },
+    {
+        "name": "mongodb-info",
+        "command": "-p 27017 --script mongodb-info"
+    },
+    {
+        "name": "ms-sql-info",
+        "command": "-p 1433 --script ms-sql-info --script-args mssql.instance-port=1433"
+    },
+    {
+        "name": "ms-sql-ntlm-info",
+        "command": "-p 1433 --script ms-sql-ntlm-info"
+    },
+    {
+        "name": "nat-pmp-info",
+        "command": "-sU -p 5351 --script=nat-pmp-info"
+    },
+    {
+        "name": "nbstat",
+        "command": "-sU --script nbstat.nse -p137"
+    },
+    {
+        "name": "nntp-ntlm-info",
+        "command": "-p 119,433,563 --script nntp-ntlm-info"
+    },
+    {
+        "name": "ntp-info",
+        "command": "-sU -p 123 --script ntp-info"
+    },
+	  {   
+        "name": "openlookup-info", 
+        "command": "-p 5850 --script openlookup-info"
+    },
+    {
+        "name": "p2p-conficker",
+        "command": "-p139,445 -vv --script p2p-conficker,smb-os-discovery,smb-check-vulns --script-args=checkconficker=1,safe=1 -T4"
+    },
+    {
+        "name": "pop3-ntlm-info",
+        "command": "-p 110,995 --script pop3-ntlm-info"
+    },
+    {
+        "name": "rdp-ntlm-info",
+        "command": "-p 3389 --script rdp-ntlm-info"
+    },
+    {
+        "name": "rmi-dumpregistry",
+        "command": "--script rmi-dumpregistry -p 1098"
+    },
+    {
+        "name": "rtsp-methods",
+        "command": "-p 554 --script rtsp-methods"
+    },
+    {
+        "name": "servicetags",
+        "command": "-sU -p 6481 --script=servicetags"
+    },
+    {
+        "name": "sip-methods",
+        "command": "--script=sip-methods -sU -p 5060"
+    },
+    {
+        "name": "smtp-commands",
+        "command": "--script smtp-commands.nse [--script-args smtp-commands.domain=puebla.gob.mx] -pT:25,465,587"
+    },
+    {
+        "name": "smtp-ntlm-info",
+        "command": "-p 25,465,587 --script smtp-ntlm-info --script-args smtp-ntlm-info.domain=puebla.gob.mx"
+    },
+    {
+        "name": "snmp-interfaces",
+        "command": "-sU -p 161 --script=snmp-interfaces"
+    },
+    {
+        "name": "snmp-netstat",
+        "command": "-sU -p 161 --script=snmp-netstat"
+    },
+    {
+        "name": "snmp-processes",
+        "command": "-sU -p 161 --script=snmp-processes"
+    },
+    {
+        "name": "snmp-sysdescr",
+        "command": "-sU -p 161 --script snmp-sysdescr"
+    },
+    {
+        "name": "snmp-win32-services",
+        "command": "-sU -p 161 --script=snmp-win32-services"
+    },
+	    {
+        "name": "snmp-win32-shares",
+        "command": "-sU -p 161 --script=snmp-win32-shares"
+    },
+    {
+        "name": "snmp-win32-software",
+        "command": "-sU -p 161 --script=snmp-win32-software"
+    },
+    {
+        "name": "snmp-win32-users",
+        "command": "-sU -p 161 --script=snmp-win32-users"
+    },
+    {
+        "name": "socks-auth-info",
+        "command": "-p 1080 --script socks-auth-info"
+    },
+    {
+        "name": "socks-open-proxy",
+        "command": "--script hadoop-namenode-info -p 50070"
+    },
+    {
+        "name": "ssh-hostkey",
+        "command": "--script ssh-hostkey --script-args ssh_hostkey=all"
+    },
+    {
+        "name": "ssl-date",
+        "command": "--script=ssl-date"
+    },
+    {
+        "name": "ssl-known-key",
+        "command": "--script ssl-known-key -p 443"
+    },
+	  {   
+        "name": "telnet-ntlm-info", 
+        "command": "-p 23 --script telnet-ntlm-info"
+    },
+    {
+        "name": "tls-alpn",
+        "command": "--script=tls-alpn"
+    },
+    {
+        "name": "tls-nextprotoneg",
+        "command": "--script=tls-nextprotoneg"
+    },
+    {
+        "name": "upnp-info",
+        "command": "-sU -p 1900 --script=upnp-info"
+    },
+    {
+        "name": "uptime-agent-info",
+        "command": "--script uptime-agent-info -p 9998"
+    },
+    {
+        "name": "wdb-version",
+        "command": "-sU -p 17185 --script wdb-version"
+    },
+    {
+        "name": "wsdd-discover",
+        "command": "--script wsdd-discover"
+    },
+    {
+        "name": "x11-access",
+        "command": "-sV -sC"
+    },
+    {
+        "name": "xmlrpc-methods",
+        "command": "-sV -sC"
+    },
+    {
+        "name": "xmpp-info",
+        "command": "-sV"
+    }
+]

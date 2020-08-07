@@ -22,7 +22,7 @@ comprobantedepago.puebla.gob.mx
 participaciones.puebla.gob.mx
 cfdi.puebla.gob.mx
 soluciones.puebla.gob.mx
-www.soluciones.puebla.gob.mx
+soluciones.puebla.gob.mx
 puebla.gob.mx
 ojp.puebla.gob.mx
 periodicooficial.puebla.gob.mx
