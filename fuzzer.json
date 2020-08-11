@@ -10,10 +10,5 @@
     {
         "name": "http-phpself-xss",
         "command": "--script=http-phpself-xss -p80"
-    },
-    {
-        "name": "http-self-xss",
-        "command": "-sV --script http-self-xss"
     }
-   
 ]

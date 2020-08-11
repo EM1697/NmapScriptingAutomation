@@ -76,10 +76,6 @@
         "command": "-p 5850 --script openlookup-info"
     },
     {
-        "name": "p2p-conficker",
-        "command": "-p139,445 -vv --script p2p-conficker,smb-os-discovery,smb-check-vulns --script-args=checkconficker=1,safe=1 -T4"
-    },
-    {
         "name": "rdp-ntlm-info",
         "command": "-p 3389 --script rdp-ntlm-info"
     },

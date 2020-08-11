@@ -2,9 +2,5 @@
     {
         "name": "broadcast-avahi-dos", 
         "command": "--script=broadcast-avahi-dos"
-    },
-    {   
-        "name": "http-slowloris", 
-        "command": "--script http-slowloris --max-parallelism 400"
     }
 ]
