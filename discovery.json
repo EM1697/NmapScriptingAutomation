@@ -1,0 +1,214 @@
+[
+        {
+        "name": "acarsd-info", 
+        "command": "--script acarsd-info --script-args"
+        },
+        {
+        "name": "ajp-headers",
+        "command": "-p 8009  --script ajp-headers"
+        },
+        {
+        "name": "ajp-request",
+        "command": "-p 8009  --script ajp-request"
+        },
+	{
+        "name": "banner",
+        "command": "-sV --script=banner"
+	},
+	{
+        "name": "dhcp-discover",
+        "command": "-sU -p 67 --script=dhcp-discover"
+	},
+	{
+        "name": "fcrdns",
+        "command": "-sn -Pn --script fcrdns"
+	},
+	{
+        "name": "finger",
+        "command": "-sV -sC"
+	},
+	{
+        "name": "firewalk",
+        "command": "--script=firewalk --traceroute"
+	},
+	{
+        "name": "flume-master-info",
+        "command": "--script flume-master-info -p 35871 host"
+	},
+	{
+        "name": "ftp-syst",
+        "command": "-sV -sC"
+	},
+	{
+        "name": "http-apache-server-status",
+        "command": "-p80 --script http-apache-server-status"
+	},
+	{
+        "name": "http-aspnet-debug",
+        "command": "--script http-aspnet-debug"
+	},
+	{
+        "name": "http-auth-finder",
+        "command": "--script http-aspnet-debug"
+	},
+	{
+        "name": " http-backup-finder",
+        "command": "--script=http-backup-finder"
+	},
+	{
+        "name": " http-bigip-cookie",
+        "command": "-p --script http-bigip-cookie"
+	},
+	{
+        "name": "http-cakephp-version",
+        "command": "-p80,443 --script http-cakephp-version"
+	},
+	{
+        "name": "http-chrono",
+        "command": "--script http-chrono"
+	},
+	{
+        "name": "http-cisco-anyconnect",
+        "command": "-p 443 --script http-cisco-anyconnect"
+	},
+	{
+        "name": "http-comments-displayer",
+        "command": "-p80 --script http-comments-displayer.nse"
+	},
+	{
+        "name": "http-cors",
+        "command": "-p 80 --script http-cors"
+	},
+	{
+        "name": "http-default-accounts",
+        "command": "-p80 --script http-default-accounts"
+	},
+	{
+        "name": "http-enum",
+        "command": "-sV --script=http-enum"
+	},
+	{
+        "name": " http-errors",
+        "command": "-p80 --script http-errors.nse"
+	},
+	{
+        "name": "http-google-malware",
+        "command": "-p80 --script http-google-malware"
+	},
+	{
+        "name": "http-internal-ip-disclosure",
+        "command": "--script http-internal-ip-disclosure"
+	},
+	{
+        "name": "http-php-version",
+        "command": "-sV --script=http-php-version"
+	},
+	{
+        "name": "http-referer-checker",
+        "command": "-p80 --script http-referer-checker.nse"
+	},
+	{
+        "name": "http-security-headers",
+        "command": "-p --script http-security-headers"
+	},
+	{
+        "name": "http-sitemap-generator",
+        "command": "--script http-sitemap-generator -p 80"
+	},
+	{
+        "name": "http-vhosts",
+        "command": "--script http-vhosts -p 80,8080,443"
+	},
+	{
+        "name": "http-waf-detect",
+        "command": "-p80 --script http-waf-detect"
+	},
+	{
+        "name": "http-waf-fingerprint",
+        "command": "--script=http-waf-fingerprint"
+	},
+	{
+        "name": "http-wordpress-enum",
+        "command": "-sV --script http-wordpress-enum"
+	},
+	{
+        "name": "http-xssed",
+        "command": "-p80 --script http-xssed.nse"
+	},
+	{
+        "name": "icap-info",
+        "command": "-p 1344  --script icap-info"
+	},
+	{
+        "name": "ip-forwarding",
+        "command": "-sn  --script ip-forwarding --script-args='target=www.example.com'"
+	},
+	{
+        "name": "ip-geolocation-geoplugin",
+        "command": "--script ip-geolocation-geoplugin"
+	},
+	{
+        "name": "jdwp-info",
+        "command": "-sT  -p  --script=+jdwp-info"
+	},
+	{
+        "name": "mrinfo",
+        "command": "--script mrinfo"
+	},
+	{
+        "name": "ms-sql-config",
+        "command": "-p 1433 --script ms-sql-config --script-args mssql.username=sa,mssql.password=sa"
+	},
+	{
+        "name": "ms-sql-dump-hashes",
+        "command": "-p 1433  --script ms-sql-dump-hashes"
+	},
+	{
+        "name": "ms-sql-hasdbaccess",
+        "command": "-p 1433 --script ms-sql-hasdbaccess --script-args mssql.username=sa,mssql.password=sa"
+	},
+	{
+        "name": "ms-sql-info",
+        "command": "-p 445 --script ms-sql-info"
+	},
+	{
+        "name": "ms-sql-ntlm-info",
+        "command": "-p 1433 --script ms-sql-ntlm-info"
+	},
+	{
+        "name": "ms-sql-query",
+        "command": "-p 1433 --script ms-sql-query --script-args mssql.username=sa,mssql.password=sa,ms-sql-query.query= SELECT * FROM master..syslogins"
+	},
+	{
+        "name": "ms-sql-tables",
+        "command": "-p 1433 --script ms-sql-tables --script-args mssql.username=sa,mssql.password=sa"
+	},
+	{
+        "name": " msrpc-enum",
+        "command": " --script=msrpc-enum"
+	},
+	{
+        "name": "mysql-databases",
+        "command": "-sV --script=mysql-databases"
+	},
+	{
+        "name": "mysql-dump-hashes",
+        "command": "-p 3306  --script mysql-dump-hashes --script-args='username=root,password=secret'"
+	},
+	{
+        "name": "mysql-variables",
+        "command": "-sV --script=mysql-variables"
+	},
+	{
+        "name": "mysql-vuln-cve2012-2122",
+        "command": "-p3306 --script mysql-vuln-cve2012-2122"
+	},
+	{
+        "name": "nbstat",
+        "command": "-sU --script nbstat.nse -p137"
+	},
+	{
+        "name": "rdp-enum-encryption",
+        "command": "-p 3389 --script rdp-enum-encryption"
+	}
+]

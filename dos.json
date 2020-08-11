@@ -2,45 +2,5 @@
     {
         "name": "broadcast-avahi-dos", 
         "command": "--script=broadcast-avahi-dos"
-    },
-    {   
-        "name": "http-slowloris", 
-        "command": "--script http-slowloris --max-parallelism 400"
-    },
-    {
-        "name": "ipv6-ra-flood",
-        "command": "-6 --script ipv6-ra-flood.nse"
-    },
-    {
-        "name": "smb-flood",
-        "command": "--script smb-flood.nse -p445"
-    },
-    {
-        "name": "smb-vuln-conficker",
-        "command": "--script smb-vuln-conficker.nse -p445"
-    },
-    {
-        "name": "smb-vuln-cve2009-3103",
-        "command": "--script smb-vuln-cve2009-3103.nse -p445"
-    },
-    {
-        "name": "smb-vuln-ms06-025",
-        "command": "--script smb-vuln-ms06-025.nse -p445"
-    },
-    {
-        "name": "smb-vuln-ms07-029",
-        "command": "--script smb-vuln-ms07-029.nse -p445"
-    },
-    {
-        "name": "smb-vuln-ms08-067",
-        "command": "--script smb-vuln-ms08-067.nse -p445"
-    },
-    {
-        "name": "smb-vuln-ms10-054",
-        "command": "--script=smb-vuln-ms10-054 --script-args unsafe"
-    },
-    {
-        "name": "smb-vuln-regsvc-dos",
-        "command": "--script smb-vuln-regsvc-dos.nse -p445"
     }
 ]

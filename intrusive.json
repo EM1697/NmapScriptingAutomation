@@ -1,0 +1,126 @@
+[
+	{
+        "name": "ajp-brute",
+        "command": "-p 8009  --script ajp-brute"
+	},
+	{
+        "name": "cvs-brute",
+        "command": "-p 2401 --script cvs-brute"
+	},
+	{
+        "name": "cvs-brute-repository",
+        "command": "-p 2401 --script cvs-brute-repository"
+	},
+	{
+        "name": "firewall-bypass",
+        "command": "--script firewall-bypass"
+	},
+	{
+        "name": "ftp-brute",
+        "command": "--script ftp-brute -p 21"
+	},
+	{
+        "name": "ftp-proftpd-backdoor",
+        "command": "--script ftp-proftpd-backdoor -p 21"
+	},
+	{
+        "name": "ftp-vsftpd-backdoor",
+        "command": "--script ftp-vsftpd-backdoor -p 21"
+	},
+	{
+        "name": "ftp-vuln-cve2010-4221",
+        "command": "--script ftp-vuln-cve2010-4221 -p 21"
+	},
+	{
+        "name": "http-awstatstotals-exec",
+        "command": "-sV --script http-awstatstotals-exec.nse"
+	},
+	{
+        "name": "http-axis2-dir-traversal",
+        "command": "-p80 --script http-axis2-dir-traversal"
+	},
+	{
+        "name": "http-brute",
+        "command": "--script http-brute -p 80"
+	},
+	{
+        "name": "http-config-backup",
+        "command": "--script=http-config-backup"
+	},
+	{
+        "name": "http-dombased-xss",
+        "command": "-p80 --script http-dombased-xss.nse"
+	},
+	{
+        "name": "http-csrf",
+        "command": "-p80 --script http-csrf.nse"
+	},
+	{
+        "name": "http-enum",
+        "command": "-sV --script=http-enum"
+	},
+	{
+        "name": "http-errors",
+        "command": "-p80 --script http-errors.nse"
+	},
+	{
+        "name": "http-exif-spider",
+        "command": "--script http-exif-spider -p80,443"
+	},
+	{
+        "name": "http-fileupload-exploiter",
+        "command": "-p80 --script http-fileupload-exploiter.nse"
+	},
+	{
+        "name": "http-form-brute",
+        "command": "--script http-form-brute -p 80"
+	},
+	{
+        "name": "http-iis-short-name-brute",
+        "command": "-p80 --script http-iis-short-name-brute"
+	},
+	{
+        "name": "http-joomla-brute",
+        "command": "-sV --script http-joomla-brute"
+	},
+	{
+        "name": "http-open-redirect",
+        "command": "--script=http-open-redirect"
+	},
+	{
+        "name": "http-phpself-xss",
+        "command": "-sV --script http-self-xss"
+	},
+	{
+        "name": "http-proxy-brute",
+        "command": "--script http-proxy-brute -p 8080"
+	},
+	{
+        "name": "http-rfi-spider",
+        "command": "--script http-rfi-spider -p80"
+	},
+	{
+        "name": "http-shellshock",
+        "command": "-sV -p- --script http-shellshock"
+	},
+	{
+        "name": "http-slowloris",
+        "command": "--script http-slowloris --max-parallelism 400"
+	},
+	{
+        "name": "http-sql-injection",
+        "command": "-sV --script=http-sql-injection"
+	},
+	{
+        "name": "http-stored-xss",
+        "command": "-p80 --script http-stored-xss.nse"
+	},
+	{
+        "name": "http-userdir-enum",
+        "command": "-sV --script=http-userdir-enum"
+	},
+	{
+        "name": "mysql-enum",
+        "command": "--script=mysql-enum"
+	}
+]
